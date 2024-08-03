@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply font-bold text-3xl mb-4;
+}
+
+h2 {
+    @apply font-bold text-xl mb-4;
+}
+
+h3 {
+    @apply font-bold text-lg mb-4;
+}
+
+h4 {
+    @apply font-bold text-base mb-4;
+}
+
+h4 code {
+    @apply ml-2 text-pink-400;
+}
+
+p {
+    @apply mb-4;
+}
+
+.code-block {
+    @apply text-sm leading-6 overflow-hidden rounded;
+}
+
+.code-block pre {
+    @apply overflow-auto p-6;
+}
+
+body {
+    color: #34495e;
+}
+
+.table {
+    @apply border-collapse border border-solid dark:border-gray-700 font-mono w-full;
+}
+
+.table th, .table td {
+    @apply border border-solid dark:border-gray-700 text-left px-4 py-2;
+}
+
+.doc-box ul {
+    @apply list-disc mx-4 px-0 text-gray-500;
+}
+
+.doc-box ul li > * {
+    @apply inline-block align-middle;
+}
+
+code.prop {
+    @apply text-pink-700 font-bold;
+}
+
+code.type {
+    @apply bg-pink-400 text-white text-xs px-1.5 py-0.5 rounded;
+}
